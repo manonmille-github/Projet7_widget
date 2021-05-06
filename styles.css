@@ -85,9 +85,15 @@ p {
 
 .icone img {
     width: 15vw;
-    margin : 5rem
+    margin : 5rem;
+    display:inline-block;
+    transition : transform 500ms linear;
+    transform-origin : 50% 50%;
 }
 
+.icone img:hover {
+    transform : rotate(360deg);
+}
 /* début du css pour le footer */
 footer {
     height: 8vh;
