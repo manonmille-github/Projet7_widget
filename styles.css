@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+body {
+    width: 99vw;
+    height: 100vh;
+}
+
+header {
+    height: 30vh;
+    background : linear-gradient(#03aab9 , #3081c4);
+    display: flex;
+    justify-content: space-between;
+}
+
