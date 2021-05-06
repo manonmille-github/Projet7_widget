@@ -1,8 +1,10 @@
+/* supression de tout les margins et paddings de la page */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* font du site */
 @font-face {
     font-family: "mandali" ;
     src: url(font/Mandali-Regular.ttf);
@@ -15,6 +17,7 @@ body {
     color: #444345;
 }
 
+/* partie css du header */
 header {
     height: 30vh;
     background : linear-gradient(#03aab9 , #3081c4);
@@ -30,6 +33,7 @@ header {
  border-left : 99vw solid transparent;
 }
 
+/* header barre de naviagtion */
 nav {
     display: flex;
     justify-content: space-between;
@@ -53,6 +57,7 @@ li a {
     color: #444345;
 }
 
+/* début du css pour la partie centrale du site */
 section {
     display: flex;
     flex-direction: column;
@@ -66,6 +71,7 @@ p {
 
 }
 
+/* Pour le icones j'ai du faire 2 div afin de pouvoir les positions comme je le souhaitais */
 .container-icones {
     display: flex;
     flex-direction: column;
@@ -82,9 +88,7 @@ p {
     margin : 5rem
 }
 
-
-
-
+/* début du css pour le footer */
 footer {
     height: 8vh;
     background : linear-gradient(#03aab9 , #3081c4);
