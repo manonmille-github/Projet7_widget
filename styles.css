@@ -4,13 +4,15 @@
 }
 
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: "mandali" ;
+    src: url(font/Mandali-Regular.ttf);
 }
 
 body {
     width: 99vw;
     height: 100vh;
+    font-family: "mandali";
+    color: #444345;
 }
 
 header {
@@ -20,3 +22,79 @@ header {
     justify-content: space-between;
 }
 
+.triangle{
+ display : inline-block;
+ height : 0vh;
+ width :0vw;
+ border-top : 3vw solid #3081c4;
+ border-left : 99vw solid transparent;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+    padding-left : 3rem;
+    height: 5vh;
+    width: 30vw;
+    background-color: white;
+    border-radius: 1rem; 
+    margin-top: 12vh;
+    margin-right: 10vw;
+}
+
+li {
+    list-style: none
+}
+
+li a {
+    text-decoration: none;
+    color: #444345;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+p {
+    font-size:2rem;
+    width: 50vw;
+    margin-left : 3rem;
+
+}
+
+.container-icones {
+    display: flex;
+    flex-direction: column;
+}
+
+.icone {
+    display: flex;
+    justify-content :space-around;
+    
+}
+
+.icone img {
+    width: 15vw;
+    margin : 5rem
+}
+
+
+
+
+footer {
+    height: 8vh;
+    background : linear-gradient(#03aab9 , #3081c4);
+    text-align: right;
+    padding-top : 2rem;
+   
+}
+footer a {
+    text-decoration: none;
+    color : #444345;
+    font-size : 1.5rem;
+    margin-right: 2rem; 
+}
