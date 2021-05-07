@@ -95,8 +95,9 @@ p {
     width: 15vw;
     margin :10vh;
     display:inline-block;
-    transition : transform 500ms linear;
+    transition : transform 1000ms linear;
     transform-origin : 50% 50%;
+    
 }
 
 .icone img:hover {
@@ -115,4 +116,41 @@ footer a {
     color : #444345;
     font-size : 1.5rem;
     margin-right: 2vw; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.slide-in-bck-tl {
+    width: 50vw;
+    height: 25vh;
+    background-color: rgb(2, 126, 175);
+	-webkit-animation: slide-in-bck-tl 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-tl 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-bck-tl {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px) translateX(-400px);
+            transform: translateZ(700px) translateY(-300px) translateX(-400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0) translateX(0);
+            transform: translateZ(0) translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-tl {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px) translateX(-400px);
+            transform: translateZ(700px) translateY(-300px) translateX(-400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0) translateX(0);
+            transform: translateZ(0) translateY(0) translateX(0);
+    opacity: 1;
+  }
 }
