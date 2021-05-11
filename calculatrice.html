@@ -24,7 +24,7 @@
                     <a href="calculatrice.html">Calculatrice</a>
                 </li>
                 <li>
-                    <a href="convertiseur.html">Convertiseur</a>
+                    <a href="convertisseur.html">Convertisseur</a>
                 </li>
                 <li>
                     <a href="fetedujour.html">Fête du jour</a>
@@ -34,49 +34,87 @@
     <!-- partie pour l'effet penché -->
     <div class="triangle"></div>
     <!-- début du code pour la calulatrice -->
+
     <h1>Calculatrice</h1>
+
     <main>
-        <section class="body-calculator">
-            <!--  la div "container-resut correspond a l'affichage du résulats de la calculatrice"-->
+        <section id="calculette">
+            <div class="ecran"></div>
+            <div class="touchescalculette">
+                <div class="container-nombre">
+                    <div class="nombre">
+                        <span id="7">7</span>
+                        <span id="8">8</span>
+                        <span id="9">9</span>
+                    </div>
+                    <div class="nombre">
+                        <span id="4">4</span>
+                        <span id="5">5</span>
+                        <span id="6">6</span>
+                    </div>
+                    <div class="nombre">
+                        <span id="1">1</span>
+                        <span id="2">2</span>
+                        <span id="3">3</span>
+                    </div>
+                    <div class="nombre">
+                        <span class="reset">C</span>
+                        <span id="0">0</span>
+                        <span class="touchesBas">.</span>
+                    </div>
+                </div>
+                <div class="touchesoperateurs">
+                    <span class="operateurs">-</span>
+                    <span class="operateurs">+</span>
+                    <span class="operateurs">/</span>                    
+                    <span class="operateurs touchesBas">x</span>
+                    <span class="egal touchesBas">=</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <main>
+        <section class="body-calculator"> -->
+    <!--  la div "container-resut correspond a l'affichage du résulats de la calculatrice"-->
 
-            <input type="text" class="container-result">
+    <!-- <input type="text" class="container-result"> -->
 
-            <!-- ici se trouve tous les boutons qui seront présents sur la calculatrice. Les div "buttons-calcualtor seront placé en colonne et allignée entre eux mais la div "buttons-ac-c" sera quand a elle mise sur la droite -->
-            <div class="container-buttons">
+    <!-- ici se trouve tous les boutons qui seront présents sur la calculatrice. Les div "buttons-calcualtor seront placé en colonne et allignée entre eux mais la div "buttons-ac-c" sera quand a elle mise sur la droite -->
+    <!-- <div class="container-buttons">
                 <div class="buttons-chiffre">
                     <div class="chiffre">
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
+                        <button data-val="7" class = "number">7</button>
+                        <button data-val="8" class = "number">8</button>
+                        <button data-val="9" class = "number">9</button>
                     </div>
                     <div class="chiffre">
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
+                        <button data-val="4" class = "number">4</button>
+                        <button data-val="5" class = "number">5</button>
+                        <button data-val="-" class = "number">6</button>
                     </div>
                     <div class="chiffre">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
+                        <button data-val class = "number"="1">1</button>
+                        <button data-val class = "number"="2">2</button>
+                        <button data-val class = "number"="3">3</button>
                     </div>
                     <div class="chiffre">
-                        <button>0</button>
-                        <button>.</button>
-                        <button>C</button>
+                        <button data-val="0"class = "number">0</button>
+                        <button data-val="."class = "number">.</button>
+                        <button data-val="clear"class = "number">C</button>
                     </div>
                 </div>
                 <div class="buttons-calculator">
-                    <button>/</button>
-                    <button>x</button>
-                    <button>-</button>
-                    <button>+</button>
-                    <button>=</button>
+                    <button data-val = "÷" class = "operateur">÷</button>
+                    <button data-val="x" class = "operateur">x</button>
+                    <button data-val="-" class = "operateur">-</button>
+                    <button data-val="+" class = "operateur">+</button>
+                    <button data-val="=" class = "operateur">=</button>
                 </div>
 
             </div>
 
         </section>
-    </main>
+    </main> -->
     <!-- footer avec nom cliquable vers github -->
     <footer>
         <a href="https://github.com/manonmille-github">Mille Manon 2021</a>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 
+
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                     <a href="calculatrice.html">Calculatrice</a>
                 </li>
                 <li>
-                    <a href="convertiseur.html">Convertiseur</a>
+                    <a href="convertisseur.html">Convertisseur</a>
                 </li>
                 <li>
                     <a href="fetedujour.html">Fête du jour</a>
@@ -34,34 +35,34 @@
     <!-- partie pour l'effet penché -->
     <div class="triangle"></div>
     <h1>Météo</h1>
-<div id="container-meteo">
-    <div class="container">
-        <div class="card">
-            <div class="card__upper">
-                <div class="location">
-                    <div class="location__date">Date</div>
-                    <div class="location__city">
-                        <div class="select">
-                            <input placeholder = " 	&#x1F50D; votre ville" class="js-location"> 
+    <div id="container-meteo">
+        <div class="container">
+            <div class="card">
+                <div class="card__upper">
+                    <div class="location">
+                        <div class="location__city">
+                            <form class="select">
+                                <input placeholder=" 	&#x1F50D; votre ville" class="js-location">
+                                <button class="btngo" type="button">GO</button>
+                            </form>
                         </div>
+                        <div class="location__time">00:00</div>
+                        <h1 class="ville"></h1>
                     </div>
-                    <div class="location__time">00:00</div>
+                    <div class="background">
+                        <div class="background__item"></div>
+                    </div>
                 </div>
-                <div class="background">
-                    <div class="background__item"></div>
-                </div>
-            </div>
-            <div class="card__lower">
-                <div class="weather">
-                    <div class="weather__temperature">0°</div>
-                    <div class="weather__description">Weather description</div><i
-                        class="weather__icon material-icons">cloud</i>
+                <div class="card__lower">
+                    <div class="weather">
+                        <div class="weather__temperature">0°</div>
+                        <div class="weather__description">Weather description</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-    
+
     <!-- footer avec nom cliquable vers github -->
     <footer>
         <a href="https://github.com/manonmille-github">Mille Manon 2021</a>
@@ -71,3 +72,5 @@
 </body>
 
 </html>
+
+
