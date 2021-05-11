@@ -165,15 +165,5 @@ input.classList.remove("error");
 });
 
 
-// Convertisseur
-
-//  function Convertisseur (){
-//    let number = document.querySelector(".valeur").value;
-//     const milimetre = document.que
-
-//     if {
-
-//      }
 
 
-//  }
