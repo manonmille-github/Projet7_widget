@@ -74,6 +74,9 @@ nav {
     margin-right: 10vw;
 }
 
+.navphone {
+    display : none
+}
 li {
     list-style : none;
     padding-left :2vw;
@@ -169,7 +172,8 @@ h1 {
   align-items: center;
 }
 .card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 3rem 5rem -2rem rgba(0,0,0,0.2);
@@ -310,20 +314,25 @@ h1 {
     color: #444;
   }
 }
-.select {
-  position: relative;
-  display: inline-block;
-  margin-right: -30px;
+form {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 10vw;
 }
+
 .select button {
     background : linear-gradient(#185d6f, #1a6478);
     color: white;
-    width: 2vw;
+    width: 3vw;
+    height: 5vh;
     border-radius: 0.25rem;
     margin-right: 1rem;
     border-color: white;
 }
 .js-location {
+    width: 15vw;
+    height: 5vh;
     margin-right: 1rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -508,10 +517,13 @@ span:hover {
 }
 
 /* header barre de naviagtion */
-nav {
-    display: none
-}
 
+nav {
+    width: 70vw;
+    font-size: 0.5rem;
+    margin-top: 2vh;
+    margin-right: 0.2rem;
+}
 
 
 header img {
@@ -559,6 +571,7 @@ footer {
     text-align: right;
     padding-top : 0vh;
     align-items: center;
+    
    
 }
 footer a {
@@ -572,13 +585,18 @@ h1 {
 
 /* Page météo */
 
+#container-meteo {
+    margin-bottom: 26vh;
+}
 
 .select button {
     width: 13vw;
     height: 7vh;
 }
 
-
+.js-location {
+    width: 50vw;
+}
 
 /* page calculatrice */
 
