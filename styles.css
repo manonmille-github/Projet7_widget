@@ -502,7 +502,44 @@ span:hover {
 
 /* Page Fête du jour */
 
+.fetedujour {
+    background-color: #cde6fc;
+    color:#a5d476 ;
+    height: 35vh;
+    width: 30vw;
+    border-radius: 2rem;
+    box-shadow: 0 10px 28px grey;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    transition: color .6s ease-in-out;
+	-webkit-animation: slide-in-bck-tl 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-tl 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
+
+.fetetop {
+    background-color: #875cc1;
+    height: 5vh;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.ephemeride {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vh;
+}
+
+.ephemeride span {
+    width: 50vw;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #a5d476;
+}
 
 
 @media screen and (max-width: 1080px){
@@ -637,5 +674,21 @@ span:hover {
 .mesure select {
     height: 5vh;   
     }
-    
+
+
+/* page fete du jour */
+
+.fetedujour {
+    width: 85vw;
+    height: 52vh;
+}
+
+.ephemeride{
+    margin-top: 3.5rem;
+}
+.fetedujour span {
+    width: 80vw ;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 }
