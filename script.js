@@ -129,6 +129,11 @@ var temp = document.querySelector(".weather__temperature");
 var desc = document.querySelector(".weather__description");
 var button = document.querySelector(".btngo");
 var time = document.querySelector(".location__time");
+var d = new Date (); 
+var hours = d.getHours() + ":" + d.getMinutes();
+console.log(hours);
+
+time.innerHTML = hours;
 
 input.addEventListener("keyup", function (event) {
 if (event.keyCode === 13) {
@@ -142,20 +147,20 @@ button.click();
 button.addEventListener("click", function () {
 async function getMeteo() {
 let response = await fetch(
-"http://api.weatherstack.com/current?access_key=bc447670f0c3f382257bfc3b03de5113&query=" + input.value + "");
+"https://api.openweathermap.org/data/2.5/weather?q="+input.value+"&appid=cc212b34587e58bcefe64595e8fc8e88");
 let data = await response.json();
 return data;
 }
 
 getMeteo().then((data) => {
-var tempValue = data["current"]["temperature"];
-var nameValue = data["location"]["name"];
-var descValue = data["current"]["weather_descriptions"];
-var timeValue = data["current"]["observation_time"];
+var tempValue = data["main"]["temp"];
+var nameValue = data["name"];
+var descValue = data["weather"][0]["description"];
+
 
 main.innerHTML = nameValue;
 desc.innerHTML = descValue;
-temp.innerHTML = `${(tempValue)}°C`;
+temp.innerHTML = `Température: ${(tempValue - 273.15).toFixed(2)}°C`;
 input.value = "";
 time.innerHTML = timeValue;
 input.classList.remove("error");
@@ -163,6 +168,16 @@ input.classList.remove("error");
 
 .catch((err) => input.classList.add("error"));
 });
+
+
+// partie convertisseur
+
+// var inputOptions = document.getElementsByClassName("units");
+// var num = document.getElementsByClassName("valeur");
+// var inputchoice;
+// var outputoption = document.getElementById("units-results");
+// var outputchoice;
+
 
 
 
