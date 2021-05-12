@@ -129,11 +129,13 @@ var temp = document.querySelector(".weather__temperature");
 var desc = document.querySelector(".weather__description");
 var button = document.querySelector(".btngo");
 var time = document.querySelector(".location__time");
+
+// ajout de l'heure sur le widget météo
 var d = new Date (); 
 var hours = d.getHours() + ":" + d.getMinutes();
-console.log(hours);
 
 time.innerHTML = hours;
+
 
 input.addEventListener("keyup", function (event) {
 if (event.keyCode === 13) {
@@ -142,8 +144,7 @@ button.click();
 }
 });
 
-
-
+// API météo
 button.addEventListener("click", function () {
 async function getMeteo() {
 let response = await fetch(
@@ -172,13 +173,35 @@ input.classList.remove("error");
 
 // partie convertisseur
 
-// var inputOptions = document.getElementsByClassName("units");
-// var num = document.getElementsByClassName("valeur");
-// var inputchoice;
-// var outputoption = document.getElementById("units-results");
-// var outputchoice;
+var inputOptions = document.getElementById("units");
+var input_num = document.getElementById("valeur");
+var userInputChoice;
+var outputOption = document.getElementById("units-result");
+var userOutputChoice;
+var grams;
+
+function Convertor() {
+            //transform to grams
+            userInputChoice = inputOptions.options[inputOptions.selectedIndex].dataset.value;
+            userOutputChoice = outputOption.options[outputOption.selectedIndex].dataset.value;
+            grams = input_num.value * userInputChoice;
+            //transform to wanted mesure
+            document.getElementsByClassName("output")[0].textContent = (grams * userOutputChoice).toFixed(3);
+            if(input_num.value.length <= 0){
+                document.getElementsByClassName("output")[0].textContent = '';
+            }
+        }
 
 
+        input_num.addEventListener('input', function () {
+            Convertor();
+        });
+        inputOptions.addEventListener('change', function () {
+            Convertor();
+        })
+        outputOption.addEventListener('change', function () {
+            Convertor();
+        })
 
-
+ 
 

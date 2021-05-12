@@ -37,20 +37,22 @@
     <main>
         <section class="body-convertor">
             <div class="mesure">
-                <input type="text" class = "valeur">
+                <input type="text" id="valeur">
                 <select name="valeur" id="units">
-                    <option value="centimetre" class = "centimètre">Centimètre</option>
-                    <option value="metre" class = "metre">Mètre</option>
-                    <option value="millimetre" class = "millimetre">Millimètre</option>
+                    <option value="kg" data-value = "1000">Kilogramme</option>
+                    <option value="ton" data-value="100000">Tonne</option>
+                    <option value="gram" data-value="1">Gramme</option>
+                    <option value="mg" data-value = "0.0001">Milligramme</option>
                 </select>
             </div>
             <div class="signe-egal">=</div>
             <div class="mesure">
-                <input type="text" id = "resultat">
-                <select name="valeur" id="units-results">
-                    <option value="centimetre" class = "centimetre">Centimètre</option>
-                    <option value="metre">Mètre</option>
-                    <option value="millimetre">Millimètre</option>
+                <input type="text" class="output">
+                <select name="valeur" id="units-result">
+                    <option value="kg" data-value="0.001">Kilogramme</option>
+                    <option value="ton" data-value="0.000001">Tonne</option>
+                    <option value="gram" data-value="1">Gramme</option>
+                    <option value="mg" data-value="1000">Milligramme</option>
                 </select>
             </div>
         </section>
