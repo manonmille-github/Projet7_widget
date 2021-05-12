@@ -501,6 +501,9 @@ span:hover {
     border : transparent;
 }
 
+.output {
+    color: black;
+}
 /* Page Fête du jour */
 
 .fetedujour {
